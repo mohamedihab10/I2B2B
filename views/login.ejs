@@ -1,0 +1,43 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>I2B</title>
+  <link rel="icon" type="image/png" href="images/I2B.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <dev class = "login header">
+    
+    
+    
+    </dev>
+      <div class="card">   
+        <div class="back">
+        <h3 class="text">Login</h3>
+        <% if (messages.error) { %>
+          <%= messages.error %>
+        <% } %>
+        <form class="form"  action="/login" method="POST">
+            <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email">
+      <br> <br>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Password">
+        <br>
+        <br>
+        
+        <button  type="submit" id="login" class="btn btn-success"><p  style="text-decoration: none; color: rgb(255, 255, 255);">Login</a></button>
+     
+       
+        
+       
+       <a href="#">forget password?</a>  <t><a href='/signup'>Sign Up</a></t>
+      </form>
+      </div>
+     </div>
+</body>
+    
